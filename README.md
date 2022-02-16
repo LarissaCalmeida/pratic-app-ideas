@@ -1,0 +1,1 @@
+# pratic-app-ideas
