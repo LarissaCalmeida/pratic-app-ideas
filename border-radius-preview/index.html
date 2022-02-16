@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Border Radius Preview</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Border Radius Preview</h1>
+        
+        <div class="wrapper">
+          <div class="containerBox" id="containerBox">
+            <div class="box" id="box" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>
+            
+            <div class="squad squad-x squad-top-left"></div>
+            <div class="squad squad-x squad-top-right"></div>
+            <div class="squad squad-y squad-left-top"></div>
+            <div class="squad squad-y squad-left-bottom"></div>
+            <div class="squad squad-x squad-bottom-left"></div>
+            <div class="squad squad-x squad-bottom-right"></div>
+            <div class="squad squad-y squad-right-top"></div>
+            <div class="squad squad-y squad-right-bottom"></div>
+            
+            <input type="number" id="box-top-left" name="box-left" value="0"/>
+            <input type="number" id="box-top-right" name="box-top" value="0"/>
+            <input type="number" id="box-bottom-left" name="box-bottom" value="0"/>
+            <input type="number" id="box-bottom-right" name="box-top" value="0"/>
+          </div>
+          
+          <div class="copyCSS">
+            <div>
+              <span>border-radius: </span>
+              <input type="text" name="border" id="borderText" value="0px 0px 0px 0px"/>
+            </div>
+            <button type="button" onclick="copyCSS()">Copy CSS</button>
+          </div>
+        </div>
+        
+        <footer>
+          <span>Made by <strong>Larissa Carvalho</strong></span>
+      </div>
+
+        <!-- Import code javascript -->
+      <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
